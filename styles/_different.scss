@@ -1,0 +1,219 @@
+.different {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--orange);
+    padding-left: 1rem;
+    padding-right:1rem;
+
+    @include breakpoint-up(medium){
+        flex-direction: row;
+        justify-content:space-between;
+        
+      }
+
+    @include breakpoint-up(large){
+        flex-direction: row;
+        justify-content:space-between;
+        
+      }
+    }
+
+
+      .algo_container h2 {
+        @include breakpoint-up(large) {
+            color:white;
+            font-size:1rem;
+            margin-top:-5rem;
+            text-align:center;
+            padding-left:5rem;
+            padding-right: 3rem;
+            
+
+          }
+          @include breakpoint-up(xlarge) {
+            color:white;
+            font-size:1rem;
+            margin-top:-5rem;
+            text-align:center;
+            padding-left:5rem;
+            padding-right: 3rem;
+            
+
+          }
+      }
+
+      .dif_container h1 {
+          @include breakpoint-up(large){
+              font-size: 4rem;
+          }
+      }
+
+     
+
+      .two {
+        display: none;
+        @include breakpoint-up(large) {
+            display:flex;
+            color: WHITE;
+            text-align: center;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-left: 3.3rem;
+            margin-bottom: 3rem;
+      }
+      }
+
+
+
+    .sign-up {
+    
+        @include breakpoint-up(medium){
+            display:none;
+        }
+        @include breakpoint-up(large){
+            display:none;
+        }
+        background-color: var(--purple) !important;
+        color: var(--tennis);
+        font-size: 4rem;
+
+    }
+
+
+// .humor {
+//     @include breakpoint-up(medium) {
+//         display:none;
+//     }
+// }
+
+
+.part {
+    @include breakpoint-up(medium){
+        display:none;
+    }
+    @include breakpoint-up(large){
+        display:none;
+    }
+      position: relative;
+      background-image: url('../images/platzhalter.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    //   background-position: center center;
+      // width: 100%;
+      min-height: 17.5rem;
+}
+    .btn {
+        display: flex;
+        justify-content:center;
+        margin-top:100px;
+        margin-left:1rem;
+        margin-right:1rem;
+
+        display:  inline-block;
+        padding:  .9rem 1.9rem;
+        color: white !important;
+        background-color:  var(--mainColor);
+        border-radius:  16px;
+        text-transform: capitalize;
+        transition: .3s;
+        
+    }
+
+    .btn1 {
+        display: flex;
+        justify-content:center;
+        margin-left:1rem;
+       
+        display:  inline-block;
+        // padding:  .9rem 1.9rem;
+        padding: 10px 21px;
+        color: white !important;
+        background-color:  var(--mainColor);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-transform: capitalize;
+        transition: .3s;
+    }
+
+   
+    
+    .btn:hover{
+        background-color: var(--hoverColor);
+        transform:  scale(1) !important;
+    }
+
+    .btn1:hover{
+        background-color: var(--hoverColor);
+        transform:  scale(1) !important;
+    }
+
+.yess h1{
+    text-decoration: underline;
+    font-family: Phosphate;
+    color: var(--orange) !important;
+    font-size: 2rem !important;
+    margin-top:1rem;
+    text-align:center;
+    margin-right:1rem;
+    @include breakpoint-up(xlarge){
+        margin-top:2rem; 
+    }
+   
+}
+
+.screens-humor {
+    display:flex;
+    justify-content: space-between; 
+}
+
+.screens {
+    display:flex;
+    justify-content:center;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.screen img {
+    // margin:3rem;
+    height: 60vh;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.sign-up {
+    
+    @include breakpoint-up(medium) {
+        margin-top:1rem;
+    }
+    @include breakpoint-up(large) {
+        display:flex;
+    flex-direction:column;
+        margin-top:2rem;
+    }
+    @include breakpoint-up(xlarge) {
+        display:flex;
+    flex-direction:column;
+        margin-top:8rem;
+    }
+    
+}   
+
+
+    .sign-up h1 {
+        @include breakpoint-up(large) {
+            margin-right:1rem;
+        color:white;
+        font-size:1.5rem;
+    }
+    @include breakpoint-up(xlarge) {
+        color:white;
+        font-size:2.5rem;
+        margin-right:1rem;
+    }
+    }
+.yellow {
+    background-color:var(--tennis) !important;
+
+}

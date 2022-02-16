@@ -1,0 +1,88 @@
+
+    .humor {
+        @include breakpoint-up(medium){
+            display:none;
+        }
+        @include breakpoint-up(large){
+            display:none;
+        }
+    }
+    
+     .humor h1 {
+        background-color: var(--purple) !important;
+        color: var(--tennis);
+        border-top-left-radius: 15px;  
+        border-top-right-radius: 15px;
+        padding-left: 1rem;   
+        padding-top: 1rem;
+      }
+    .humor p {
+        background-color: var(--purple) !important;
+        color: white;
+        padding-left: 1rem;
+        padding-right: 0.5rem;
+        // @include breakpoint-up(medium) {
+        //     padding-bottom:2rem;
+        // }
+        // @include breakpoint-up(large) {
+        //     padding-bottom:2rem;
+        // }
+    }
+
+    .humor2 {
+        display: none;
+            @include breakpoint-up(large) {
+                display:flex;
+            flex-direction:column;
+            margin-top:-7rem;
+            margin-bottom: -6rem;
+         
+            background-color: var(--purple) !important;
+            
+            border-top-left-radius: 15px;  
+            border-top-right-radius: 15px;
+            
+            padding-top: 1rem;
+            align-items:center;
+            text-align:center;
+            // width: 20vw;
+            
+            width:32vw;
+          
+            height: 623px; 
+          
+            padding-right:4rem;
+            padding-left: 4rem;
+            // width: 426px;
+          
+            // height: 100vh;
+            left: 1012px;
+            top: 1631.74px;
+            // @include breakpoint-down(large){
+               
+            //     height: 700px;
+            // }
+            }
+            @include breakpoint-up(xlarge) {
+                height: 1271.26px; 
+            } 
+        
+        }
+        
+        
+        
+        .humor2 h1 {
+            color: var(--tennis);
+            font-size: 3rem;
+        }
+        .humor2 p {
+            color: white;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+            // @include breakpoint-up(medium) {
+            //     padding-bottom:2rem;
+            // }
+            // @include breakpoint-up(large) {
+            //     padding-bottom:2rem;
+            // }
+        }

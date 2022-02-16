@@ -1,0 +1,59 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.light{
+    /*	--mainColor: #FFCB67;*/
+        --mainColor: #FF823B;
+        --hoverColor: #FE9424;
+        --purple: #A600D3;
+        --tennis: #ECFF0D;
+        --orange: #FF823B;
+    
+    
+        --backgroundColor: #FFE1A1;
+    /*	--backgroundColor: ##FFFBF9;*/
+        --darkOne: #1F1F1F;
+        --darkTwo: #393937;
+        --lightOne:  #B07F36;
+        --lightTwo: #C7A065;
+    }
+    
+    .dark{
+        --mainColor: #FFCB67;
+        --hoverColor: #FE9424;
+        --backgroundColor: #192E3A;
+        --darkOne: #f3f3f3;
+        --darkTwo: #fff;
+        --lightOne:  #ccc;
+        --lightTwo: #e7e3e3;
+    }
+
+
+
+
+//     // Colors
+// $primary-color: #ffa502;
+// $secondary-color: #e16415;
+// $red: rgb(156, 28, 51);
+// $purple: rgb(123, 48, 134);
+// $green: rgb(15, 76, 92); 
+
+// // Shades of Grey
+// $grey-1: #212222;
+// $grey-2: #78716c;
+// $grey-3: #d6d3d1;
+// $grey-4: #e7e5e4;
+
+
+// Font Families
+$navigation-font: 'Mulish', sans-serif;
+$headers-font: 'Phosphate', serif;
+$text-font: 'Mulish', sans-serif;
+
+// Font Sizes
+$font-sm: 0.875rem; // 14px
+$font-med: 1.125rem; // 
+$font-lg: 1.25rem; // 
+$font-xlg: 3.25rem; // 
+$font-xllg: 5rem; // 

@@ -1,0 +1,150 @@
+.afraid {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-up(medium){
+        flex-direction: row;
+        justify-content:space-between;
+      }
+
+    @include breakpoint-up(large){
+        flex-direction: row;
+        justify-content:space-between;
+      }
+
+    .col1 {
+        width: 90%;
+        // margin: 1rem auto;
+        z-index: 100;
+        padding-top:1rem;
+        position: relative;
+        background-image: url('../images/car.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+        width: 100%;
+        min-height: 17.5rem;
+        height: 80vh;
+        
+
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            padding: 2rem;
+            text-align: right;
+        }
+
+        @include breakpoint-up(large){
+            text-align: right;
+            justify-content: start;
+            padding: 2rem;
+            background-image: none;
+        }
+        
+    }
+     .col1 h1 {
+         color: white;
+         font-size: 2.8rem;
+        margin-top: 3rem;
+        padding-right: 1rem;
+        padding-left: 2rem;
+
+        @include breakpoint-up(medium) {
+            font-size: 3rem;
+            margin-top: 0rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        @include breakpoint-up(large) {
+            color:var(--purple) !important;
+        }
+     }
+     
+        .text1 {
+            
+             @include breakpoint-up(medium){
+                text-align: right;
+                align-items:right;
+                padding: 1rem;
+            }
+
+            @include breakpoint-up(large){
+                text-align: right;
+                align-items:right;
+            }
+        }
+    }
+
+    .col2 {
+        // position: relative;
+        // background-image: url('../images/car.jpg');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position-y: 30%;
+        // width: 100%;
+        // min-height: 17.5rem;
+        // height: 80vh;
+        // margin-top: -13rem;
+
+        // // @include breakpoint-up(medium){
+        // //     max-width: 100%;
+            
+        // //   }
+
+        // @include breakpoint-up(medium) {
+        //     height: 70vh;
+        //     margin-top: 0rem;
+        // }
+    
+        @include breakpoint-up(large){
+         
+            margin-top: 0rem;
+            position: relative;
+            background-image: url('../images/car.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: 30%;
+            width: 100%;
+            min-height: 17.5rem;
+          
+          }
+    }
+
+
+    .col3 {
+
+        width: 90%;
+        margin: 1rem auto;
+        padding-left: 0.9rem;
+
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            padding: 2rem;
+            text-align: left;
+        }
+
+        @include breakpoint-up(large){
+            text-align: left;
+            justify-content: end;
+            padding: 2rem;
+        }
+
+        .text2 {
+            @include breakpoint-up(medium){
+                text-align: left;
+                align-items:left;
+                padding: 1rem;
+            }
+
+            @include breakpoint-up(large){
+                text-align: left;
+                align-items:left;
+            }
+        }
+    }
+
+   
