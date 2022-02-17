@@ -1,0 +1,238 @@
+.about-us-h-d {
+    margin-top: 2rem;
+
+    @include breakpoint-up(medium) {
+       display:flex;
+       flex-direction:row;
+       margin-top:0rem;
+    }
+
+    @include breakpoint-up(large) {
+        // margin-top:10rem;
+        display: none;
+    }
+    
+    position: relative;
+
+}
+
+.about {
+    
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color:black;
+    @include breakpoint-up(medium) {
+        width: 50%;
+        background-color: var(--purple);
+        color: var(--tennis);
+        //margin-bottom:1rem;
+    }
+    
+}
+
+
+.about p {
+    font-size: 15px;
+    @include breakpoint-up(medium) {
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+}
+
+.believe {
+    padding-left: 0.7rem;
+    // padding-right: 1rem;
+    @include breakpoint-up(medium){
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+    
+    }
+}
+
+.about h1 {
+        padding-bottom:0.5rem;
+        font-size: 2rem;
+        @include breakpoint-up(medium) {
+            padding-top:0.5rem;
+            color:var(--tennis);
+            text-align:center;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+       
+    }
+// .believe {
+//     background-color:var(--orange)
+// }
+
+// .believe h2 {
+//     color:white;
+//     font-weight:normal;
+// }
+
+.say-hi {
+    background-color:var(--purple);
+    font-size: 3rem;
+}
+
+.say-hi h1 {
+        color:var(--tennis);
+}
+
+.team-img {
+    position: relative;
+    background-image: url('../images/thisisit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 23.5rem;
+}
+
+.team-img2 {
+
+    position:relative;
+    //margin-top:3rem;
+    position: relative;
+    background-image: url('../images/thisisit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 65%;
+    height: 77vh;
+    margin-top: -1rem;
+    margin-right: -15rem;
+    margin-left: 8rem;
+    //min-height: 17.5rem;
+
+    @include breakpoint-up(xlarge){
+        margin-top: -3rem;
+        margin-right: -15rem;
+    }
+    
+
+}
+
+.about-us1-m {
+     display:flex;
+
+     @include breakpoint-down(medium) {
+         display:none;
+     }
+
+     @include breakpoint-down(large) {
+         margin-top: 22rem;
+         justify-content: center;
+
+     }
+
+    //  @include breakpoint-down(large){
+    //     //  margin-right: 3rem;
+    //     //  margin-left: 3rem;
+    //      font-size: 1rem;
+    //      margin-top:10rem;
+    //  }
+    }
+
+
+
+.about1 {
+    width: 50%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    background-color: var(--orange);
+    color: white;
+    @include breakpoint-down(large){
+         padding-right: 3rem;
+         padding-left: 3rem;
+         font-size: 1rem;
+         margin-top:10rem;
+     }
+}
+
+.about1 h1 {
+    color:white;
+    text-align:center;
+    font-size: 6rem;
+    font-weight: normal;
+}
+
+.about1 p {
+    font-size: 1.5rem;
+}
+
+.believe1 {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    width: 50%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 2.5rem;
+    @include breakpoint-down(large){
+       
+        margin-top:10rem;
+        font-size: 1.7rem;
+    }
+}
+
+.long_paragraph {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    @include breakpoint-up(medium) {
+        margin-top: 3rem;
+    }
+    @include breakpoint-up(large) {
+        margin-top: 6rem;
+    }
+}
+
+.long_paragraph h1 {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+    //margin-top: 3rem;
+    font-size: 3rem;
+
+    @include breakpoint-up(medium){
+        display:none;
+        font-size: 4rem;
+    }
+
+
+    @include breakpoint-up(large){
+        display:none;
+        font-size: 7rem;
+    }
+}
+.part1 {
+    padding-bottom: 2rem;
+}
+
+.links7 {
+    display: flex;
+    // justify-content:center !important;
+    align-items: center !important;
+}
+
+.dat {
+    text-align:center;
+    margin-bottom:0rem !important;
+}
+
+.dat2 {
+    text-align:center;
+    margin-bottom:2rem !important;
+}

@@ -1,0 +1,58 @@
+.sign-up2 {
+    width: 20rem;
+    display:flex;
+  
+    // justify-content:center;
+
+    @include breakpoint-up(large) {
+        display:flex;
+        margin-top: -30rem;
+    margin-left: 45rem;
+    z-index:100;
+    }
+    
+}
+
+
+
+.sign-up2 h1{
+    // display:block;
+    color: var(--tennis);
+    font-size: 10rem;
+
+}
+.sign-up2 p{
+    // display:block;
+    color: white;
+ 
+
+}
+.form3 {
+        //width: 100%;
+      display:flex;
+      flex-direction: row;
+      border-radius: 20px;
+        border-radius: 20px;
+        background-color: #FFFBF9;
+        margin-top:3rem;
+        margin: auto 0;
+        display: none;
+
+        // @include breakpoint-up(large){
+        //     display: flex;
+        //     margin-top: 22rem;
+        //     margin-left: auto;
+        // }
+       
+        
+        @include breakpoint-up(xlarge){
+            display: flex;
+          margin: auto 0;
+        }
+    
+}
+.cont-sign {
+    @include breakpoint-down(large) {
+        display: none;
+    }
+}

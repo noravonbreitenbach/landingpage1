@@ -1,0 +1,236 @@
+
+
+
+.field {
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    background: transparent;
+    //width: 9rem;
+    margin-bottom: 1rem;
+    color: var(--purple);
+    border-bottom-color:var(--purple);
+  
+}
+
+.field1 {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:none;
+  background: transparent;
+  //width: 9rem;
+  margin-bottom: 1rem;
+  color: var(--purple);
+  @include breakpoint-up(xlarge) {
+    margin-right: 3rem;
+  }
+
+}
+
+.form {
+    //width: 100%;
+  display:none;
+  flex-direction: column;
+  margin: auto 0;
+
+  @include breakpoint-up(medium){
+    display: none;
+    margin-bottom:2rem;
+  }
+
+  @include breakpoint-up(large){
+    display:flex;
+    // margin-right: -2rem;
+    margin-left: 3rem;
+  }
+ 
+    // align-items: left;
+    // justify-content:left;
+    // border: solid;
+    border: solid;
+    border-radius: 15px;
+    background-color: #FFFBF9;
+    padding: 1rem;
+    color: var(--purple);
+    // @include breakpoint-up(medium){
+    //     margin: 0 auto;
+        
+    // }
+}
+
+.form0 {
+  //width: 100%;
+display:flex;
+flex-direction: row;
+border-radius: 20px;
+  border-radius: 20px;
+  background-color: #FFFBF9;
+  margin-top:3rem;
+  
+  @include breakpoint-up(xlarge){
+    margin-top: 27rem;
+  }
+  
+
+// @include breakpoint-up(medium){
+//   margin-bottom:2rem;
+// }
+
+// @include breakpoint-up(large){
+//   // margin-right: -2rem;
+//   margin-left: 3rem;
+// }
+
+  // align-items: left;
+  // justify-content:left;
+  // border: solid;
+  // border: solid;
+  // border-radius: 20px;
+  // border-radius: 20px;
+  // background-color: #FFFBF9;
+  
+  //padding: 0.7rem;
+  // margin-top: 57rem;
+  // color: var(--purple);
+  // @include breakpoint-up(medium){
+  //     margin: 0 auto;
+      
+  // }
+}
+
+
+// [type="checkbox"] + label {
+//     position: absolute;
+// }
+[type="checkbox"] {
+    position: relative;
+    left: 15px;
+    top: -4px;
+    z-index: 0;
+    -webkit-appearance: none;
+    padding-bottom:1rem;
+  }
+
+[type="checkbox"] + label::before {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    z-index: 5;
+    position: relative;
+    border-radius: 15px;
+    transition:0.1s;
+    border:solid;
+  }
+
+input[type="checkbox"]:checked+label::before {
+    background-color: #c72f2f;
+}
+
+.send {
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+}
+#question {
+    border-radius:5px;
+    border-color: var(--purple);
+}
+
+::placeholder {
+    
+    color: var(--purple);
+    opacity: 30%;
+    font-size: 1rem;
+    font-family: Phosphate;
+
+  }
+
+.email1 {
+  margin-top:1rem;
+  margin-left:0.5rem;
+}
+.fas {
+  margin-top: 5px;
+}
+.pos-center {
+    display:flex;
+    // justify-content:center;
+}
+.say-hi2 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.flex {
+    display:flex;
+   
+}
+.form1 {
+    max-width: 20rem;
+}
+
+.form2 {
+  //position:relative;
+  max-width: 22rem;
+  margin-top:2rem;
+  display: none;
+  @include breakpoint-up(large){
+    display: flex;
+    max-width: 24rem;
+  }
+}
+.move {
+  text-align: right;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  // margin-top: 2rem;
+  margin-right: -4rem;
+}
+
+.move1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  // margin-top: 2rem;
+  margin-right: -5rem;
+}
+
+.links-form {
+  display:flex;
+  flex-direction: column;
+ 
+}
+
+// .label {
+//   background-color: #fff;
+//   border: 1px solid #666;
+//   color: #000;
+//   padding: 10px 15px;
+//   text-align: center;
+//   display: inline-block;
+//   font-size: 20px;
+//   margin: 15px 15px;
+//   cursor: pointer;
+// }
+
+.text {
+  background-color: #fff;
+  border: 1px solid #666;
+  color: #000;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+#message {
+  border: 1px solid var(--purple);
+  border-radius: 15px;
+}

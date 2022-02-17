@@ -1,0 +1,246 @@
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+    font-family: Phosphate;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--purple);
+    line-height: 1.15;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    
+	font-family: $text-font;
+	color: var(--orange);
+}
+
+p{
+  font-family: $text-font;
+}
+
+.big-wrapper {
+    position: relative;
+    // padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height:  100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display:  flex;
+    flex-direction:  column;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+	display: inline-block;
+	border: none;
+	background: var(--darkTwo);
+	color: var(--backgroundColor);
+	outline:  none;
+	cursor:  pointer;
+	width: 39px;
+	height: 39px;
+	border-radius: 50%;
+	font-size:  1.1rem;
+	transition:  .3s;
+}
+
+.toggle-btn i{
+	line-height: 39px;
+}
+
+.big-wrapper.light .toggle-btn i:last-child {
+	display: none;
+}
+
+.big-wrapper.light .toggle-btn i:first-child {
+	display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:last-child {
+	display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:first-child {
+	display: none;
+}
+
+.toggle-btn:hover{
+	background:  var(--mainColor);
+}
+
+.copy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	animation: appear 1s 1 both;
+}
+
+@keyframes appear {
+	0% {
+		clip-path: circle(30% at -25% -25%);
+	}
+	100% {
+		clip-path:  circle(150% at 0 0);
+	}
+}
+
+
+  .container {
+    // max-width: 69.375rem;
+    // margin: 0 auto;
+  
+    &--pall {
+      padding-top: 2.375rem;
+      padding-right: 1.5rem;
+      padding-bottom: 2.375rem;
+      padding-left: 1.5rem;
+  
+      @include breakpoint-up(large) {
+        padding-top: 9rem;
+        padding-bottom: 6rem;
+      }
+    }
+    &--py {
+      padding-top: 2.375rem;
+      padding-bottom: 2.375rem;
+  
+      @include breakpoint-up(large) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+    &--px {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    &--pt {
+      padding-top: 2.375rem;
+  
+      @include breakpoint-up(large) {
+        padding-top: 6rem;
+      }
+    }
+    &--pr {
+      padding-right: 1.5rem;
+    }
+    &--pb {
+      padding-bottom: 2.375rem;
+  
+      @include breakpoint-up(large) {
+        padding-bottom: 6rem;
+      }
+    }
+    &--pl {
+      padding-left: 1.5rem;
+    }
+  }
+  
+//   // Flexbox
+//   .flex {
+//     display: flex;
+  
+//     &-jc-sb {
+//       justify-content: space-between;
+//     }
+    
+//     &-jc-c {
+//       justify-content: center;
+//     }
+    
+//     &-ai-c {
+//       align-items: center;
+//     }
+  
+//     // &-fd-r {
+//     //   flex-direction: row;
+//     // }
+  
+//     // &-fd-c {
+//     //   flex-direction: column;
+//     // }
+  
+//   }
+  
+//   // Buttons
+//   button,
+//   .button {
+//     position: relative;
+//     display: inline-block;
+//     padding: 0.875rem 2.1875rem;
+//     background-image: linear-gradient(to right, $primary-color, $secondary-color);
+//     border: 0;
+//     border-radius: 10px;
+//     cursor: pointer;
+//     color: white;
+//     font-weight: 400;
+//     font-size: $font-med;
+//     font-family: $headers-font;
+//     transition: opacity 300ms ease-in-out;
+//     overflow: hidden;
+  
+//     &::before {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       bottom: 0;
+//       left: 0;
+//       background-color: rgba(255, 255, 255, 0.25);
+//       opacity: 0;
+//       transition: opacity 150ms ease-in-out;
+//     }
+  
+//     &:hover::before {
+//       opacity: 1;
+//     }
+//   }
+  
+  // Visibility
+  .hide-for-mobile {
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  .hide-for-tablet {
+    @include breakpoint-down(large) {
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  .hide-for-desktop-l {
+    @include breakpoint-up(xlarge) {
+      display: none;
+    }
+  }
